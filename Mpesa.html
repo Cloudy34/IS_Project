@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <style>
+        body{
+            background-color: rgb(50, 73, 50);
+        }
+        .Payment_info{
+         background-color: aliceblue;
+         height: 800px;
+        margin: auto;
+        width: 50%;
+        border: 3px solid green;
+        padding: 10px;
+
+        }
+        .H1{
+            color: rgb(8, 73, 8);
+            margin: auto;
+        width: 50%;
+       
+        }
+        .Menu{
+            background-color: green;
+        }
+        .h2{ 
+            background-color: Green ;
+            color:aliceblue;
+            width: 50%;
+
+        }
+        .image{  
+                width:50%;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="Payment_info"> 
+        <h1 class="H1">Payment  </h1>
+        <div class = "image">
+            <img src="assets/img/mpesa.png" alt="mpesa" width ="350px" height="200px">
+
+        </div>
+        <div class ="Menu">
+            <h1 class="h2">Send Money</h1> 
+            <h1 class="h2">0792650995</h1> 
+        </div>
+        <div>
+            <button id="myBtn">Shopping more</button>
+        </div>
+    </div>
+   
+    
+</body>
+<script>
+    
+    var btn = document.getElementById('myBtn');
+    btn.addEventListener('click', function() {
+      document.location.href = ' index.php?page=home';
+    });
+  
+    </script>
+</html>
